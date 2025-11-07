@@ -3,7 +3,7 @@
 
 import * as BABYLON from '@babylonjs/core';
 import '@babylonjs/loaders';
-import { EditorView, basicSetup } from '@codemirror/basic-setup';
+import { EditorView, basicSetup } from 'codemirror';
 import { EditorState } from '@codemirror/state';
 import { javascript } from '@codemirror/lang-javascript';
 
@@ -386,7 +386,9 @@ function executeUserCode() {
         const turnRight = (degrees) => robotController.turnRight(degrees);
         const wait = (ms) => new Promise(resolve => setTimeout(resolve, ms));
         
-        // Execute user code in safe context
+        // Execute user code in controlled context
+        // Note: This uses AsyncFunction for educational purposes. In production,
+        // consider using a proper code sandbox like vm2 or isolated-vm for security.
         const AsyncFunction = Object.getPrototypeOf(async function(){}).constructor;
         const userFunction = new AsyncFunction(
             'moveForward', 'moveBackward', 'turnLeft', 'turnRight', 'wait',

@@ -20,10 +20,9 @@
   "dependencies": {
     "@babylonjs/core": "^7.0.0",
     "@babylonjs/loaders": "^7.0.0",
-    "@codemirror/basic-setup": "^0.20.0",
     "@codemirror/lang-javascript": "^6.2.4",
     "@codemirror/state": "^6.5.2",
-    "codemirror": "^5.65.20"
+    "codemirror": "^6.0.1"
   },
   "devDependencies": {
     "vite": "^7.2.1"
