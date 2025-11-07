@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOBOT - 3D Robot Programming Environment</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>
+                <span class="material-icons">smart_toy</span>
+                BLOBOT - 3D Robot Programming
+            </h1>
+        </header>
+        
+        <div class="main-content">
+            <!-- 3D Scene Container -->
+            <div class="scene-container">
+                <canvas id="renderCanvas"></canvas>
+                <div class="controls">
+                    <h3><span class="material-icons">gamepad</span> Manual Controls</h3>
+                    <div class="button-grid">
+                        <button id="btnForward" class="control-btn">
+                            <span class="material-icons">arrow_upward</span>
+                            Forward
+                        </button>
+                        <button id="btnBackward" class="control-btn">
+                            <span class="material-icons">arrow_downward</span>
+                            Backward
+                        </button>
+                        <button id="btnTurnLeft" class="control-btn">
+                            <span class="material-icons">rotate_left</span>
+                            Turn Left
+                        </button>
+                        <button id="btnTurnRight" class="control-btn">
+                            <span class="material-icons">rotate_right</span>
+                            Turn Right
+                        </button>
+                        <button id="btnReset" class="control-btn reset">
+                            <span class="material-icons">refresh</span>
+                            Reset
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Code Editor Container -->
+            <div class="editor-container">
+                <div class="editor-header">
+                    <h3><span class="material-icons">code</span> Code Editor</h3>
+                    <button id="btnExecute" class="execute-btn">
+                        <span class="material-icons">play_arrow</span>
+                        Execute
+                    </button>
+                </div>
+                <div id="codeEditor"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script type="module" src="/app.js"></script>
+</body>
+</html>
