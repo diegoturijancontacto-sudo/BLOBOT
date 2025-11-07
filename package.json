@@ -1,0 +1,31 @@
+{
+  "name": "blobot",
+  "version": "1.0.0",
+  "description": "3D Robot Programming Environment",
+  "main": "app.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "robot",
+    "3d",
+    "babylon.js",
+    "programming",
+    "education"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@babylonjs/core": "^7.0.0",
+    "@babylonjs/loaders": "^7.0.0",
+    "@codemirror/basic-setup": "^0.20.0",
+    "@codemirror/lang-javascript": "^6.2.4",
+    "@codemirror/state": "^6.5.2",
+    "codemirror": "^5.65.20"
+  },
+  "devDependencies": {
+    "vite": "^7.2.1"
+  }
+}
